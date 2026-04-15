@@ -1,7 +1,3 @@
-/* ============================================================
-   KCR Elegance Funerals — style.css
-   ============================================================ */
-
 /* ── RESET & BASE ── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -10,6 +6,16 @@
 }
 
 :root {
+
+--blue: #1a2d4f;
+--blue-mid: #1e3560;
+--blue-deep: #111e36;
+--blue-light: #2a4a7f;
+--blue-muted: #2c3f60;
+--blue-glow: rgba(30,53,96,0.55);
+
+
+
   --gold:        #b89a5e;
   --gold-light:  #d4b98a;
   --gold-pale:   #f5edd8;
@@ -18,7 +24,7 @@
   --mid:         #2d2b26;
   --warm-white:  #faf8f4;
   --cream:       #f2ede4;
-  --text:        #3c3830;
+  --text:        black;
   --muted:       #7a7060;
   --serif:       'Cormorant Garamond', Georgia, serif;
   --sans:        'Jost', sans-serif;
@@ -40,7 +46,7 @@ img { display: block; max-width: 100%; }
    TOPBAR
 ════════════════════════════════════════ */
 .topbar {
-  background: var(--dark);
+  background: var(--blue-deep);
   color: #bfb49a;
   font-size: 0.72rem;
   letter-spacing: 0.07em;
@@ -158,8 +164,7 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 30% 50%, rgba(184, 154, 94, 0.07) 0%, transparent 65%),
-    linear-gradient(160deg, #0e0d0b 0%, #1a1814 60%, #0e0d0b 100%);
+    radial-gradient(var(--dark));
 }
 
 .hero-pattern {
@@ -362,7 +367,7 @@ nav.scrolled {
    FEATURE STRIP
 ════════════════════════════════════════ */
 .strip {
-  background: var(--dark);
+  background: var(--blue-deep);
   border-top: 1px solid rgba(184, 154, 94, 0.12);
   border-bottom: 1px solid rgba(184, 154, 94, 0.12);
   padding: 28px 40px;
@@ -435,7 +440,7 @@ h2.section-title {
   font-family: var(--serif);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 300;
-  color: var(--dark);
+  color: var(--gold);
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -445,7 +450,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 .section-sub {
   font-size: 0.95rem;
   font-weight: 300;
-  color: var(--muted);
+  color: var(--gold-light);
   line-height: 1.8;
   max-width: 540px;
 }
@@ -531,7 +536,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 .about-text p {
   font-size: 0.95rem;
   font-weight: 300;
-  color: var(--muted);
+  color: var(--dark);
   line-height: 1.9;
   margin-bottom: 18px;
 }
@@ -565,7 +570,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 /* ════════════════════════════════════════
    PLANS
 ════════════════════════════════════════ */
-.plans { background: var(--cream); }
+.plans { background: var(--blue-deep); }
 
 .plans-header {
   display: flex;
@@ -583,7 +588,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 }
 
 .plan-card {
-  background: white;
+  background: var(--blue);
   padding: 44px 30px;
   position: relative;
   border-bottom: 3px solid transparent;
@@ -626,7 +631,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   font-family: var(--serif);
   font-size: 1.55rem;
   font-weight: 400;
-  color: var(--dark);
+  color: var(--cream);
   margin-bottom: 6px;
 }
 
@@ -683,7 +688,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-light);
   text-decoration: none;
   transition: gap 0.2s;
 }
@@ -694,7 +699,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 /* ════════════════════════════════════════
    SERVICES
 ════════════════════════════════════════ */
-.services { background: var(--warm-white); }
+.services { background: var(--deep); }
 
 .services-grid {
   display: grid;
@@ -711,12 +716,12 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 }
 
 .service-item:hover {
-  background: var(--dark);
+  background: var(--blue);
   border-top-color: var(--gold);
 }
 
 .service-item:hover .service-title,
-.service-item:hover .service-desc { color: #9a8e78; }
+.service-item:hover .service-desc { color: #ede7da; }
 
 .service-num {
   font-family: var(--serif);
@@ -727,7 +732,6 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   margin-bottom: 16px;
 }
 
-.service-item:hover .service-num { color: rgba(184, 154, 94, 0.15); }
 
 .service-title {
   font-family: var(--serif);
@@ -750,11 +754,11 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 /* ════════════════════════════════════════
    FLEET
 ════════════════════════════════════════ */
-.fleet { background: var(--dark); }
+.fleet { background: var(--blue-deep); }
 
 .fleet .section-label span { color: var(--gold); }
 .fleet h2.section-title { color: var(--warm-white); }
-.fleet .section-sub { color: #5a5044; }
+.fleet .section-sub { color: var(--gold-light); }
 
 .fleet-header {
   display: flex;
@@ -846,7 +850,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 .why { background: var(--deep); }
 
 .why h2.section-title { color: var(--warm-white); }
-.why .section-sub { color: #5a5044; }
+.why .section-sub { color: var(--gold-light); }
 
 .why-grid {
   display: grid;
@@ -880,7 +884,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 .why-item p {
   font-size: 0.84rem;
   font-weight: 300;
-  color: #4a4438;
+  color: var(--gold);
   line-height: 1.8;
 }
 
@@ -906,7 +910,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 .why-cta-block > p {
   font-size: 0.875rem;
   font-weight: 300;
-  color: #4a4438;
+  color: var(--gold);
   line-height: 1.8;
 }
 
@@ -922,7 +926,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   align-items: flex-start;
   gap: 12px;
   font-size: 0.84rem;
-  color: #7a7060;
+  color: var(--gold-light);
 }
 
 .contact-row svg { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
@@ -931,7 +935,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 /* ════════════════════════════════════════
    FAQ
 ════════════════════════════════════════ */
-.faq { background: var(--warm-white); }
+.faq { background: var(--blue-deep); }
 
 .faq-grid {
   display: grid;
@@ -958,7 +962,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 400;
-  color: var(--dark);
+  color: var(--gold);
   letter-spacing: 0.02em;
   user-select: none;
   gap: 16px;
@@ -985,9 +989,9 @@ h2.section-title em { font-style: italic; color: var(--gold); }
 .faq-item.open .faq-a { max-height: 220px; }
 
 .faq-a p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 300;
-  color: var(--muted);
+  color: var(--gold);
   line-height: 1.85;
   padding-bottom: 22px;
 }
@@ -1035,7 +1039,7 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--dark);
   margin-bottom: 4px;
 }
 
@@ -1108,7 +1112,7 @@ footer {
 .footer-brand p {
   font-size: 0.82rem;
   font-weight: 300;
-  color: #3a3428;
+  color: var(--gold);
   line-height: 1.85;
 }
 
@@ -1130,7 +1134,7 @@ footer {
 .footer-col ul a {
   font-size: 0.82rem;
   font-weight: 300;
-  color: #3a3428;
+  color: var(--muted);
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -1148,20 +1152,20 @@ footer {
 
 .footer-bottom p {
   font-size: 0.7rem;
-  color: #2a2820;
+  color: var(--gold);
   letter-spacing: 0.04em;
 }
 
 .footer-socials { display: flex; gap: 12px; }
 
 .social-btn {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   border: 1px solid rgba(184, 154, 94, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5a5044;
+  color: var(--muted);
   transition: all 0.2s;
   cursor: pointer;
   text-decoration: none;
