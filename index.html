@@ -9,23 +9,23 @@
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      TOPBAR
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <div class="topbar">
   <div class="topbar-left">
     <span>📞 <a href="tel:0615457061">061 545 7061</a></span>
     <span>✉ <a href="mailto:info@kcrelegancefunerals.co.za">info@kcrelegancefunerals.co.za</a></span>
-    <span>105 Orion Building, Bester Street, Nelspruit, 1200</span>
+    <span>U1 Nelcity Bld, Cnr Samora Michel Dr &amp; Paul Kruger Rd</span>
   </div>
   <div class="topbar-right">
     <span>Mon – Sat &nbsp;·&nbsp; 9:00AM – 6:00PM</span>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      NAVBAR
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <nav id="navbar">
   <a href="#home" class="nav-logo">
     <img src="images/Img-logo2.jpg" alt="KCR Elegance Funerals" class="nav-logo-img"/>
@@ -44,9 +44,9 @@
   </button>
 </nav>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      HERO
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
   <div class="hero-pattern"></div>
@@ -68,12 +68,12 @@
         <span class="trust-label">Cover From</span>
       </div>
       <div class="trust-item">
-        <span class="trust-num">24/7</span>
-        <span class="trust-label">Support</span>
+        <span class="trust-num">16k+</span>
+        <span class="trust-label">Members</span>
       </div>
       <div class="trust-item">
-        <span class="trust-num">2</span>
-        <span class="trust-label">Day Claims</span>
+        <span class="trust-num">24/7</span>
+        <span class="trust-label">Support</span>
       </div>
       <div class="trust-item">
         <span class="trust-num">6+</span>
@@ -82,49 +82,81 @@
     </div>
   </div>
 
-  <!-- Real casket photo fills the right panel -->
-  <div class="hero-photo">
-    <img src="images/Img-hearse.jpg" alt="Dignified funeral casket with floral arrangement"/>
-    <div class="hero-photo-overlay"></div>
+  <!-- Hero right panel: Quick Quote Form -->
+  <div class="hero-form-panel">
+    <div class="hero-form-card">
+      <div class="hero-form-header">
+        <p class="hero-form-eyebrow">Free Consultation</p>
+        <h3>Get a Quote Today</h3>
+        <p class="hero-form-sub">One of our consultants will reach out within 24 hours.</p>
+      </div>
+      <form onsubmit="return false;">
+        <div class="form-group">
+          <label for="h-name">Full Name</label>
+          <input type="text" id="h-name" placeholder="Your full name"/>
+        </div>
+        <div class="form-group">
+          <label for="h-phone">Phone Number</label>
+          <input type="tel" id="h-phone" placeholder="e.g. 061 545 7061"/>
+        </div>
+        <div class="form-group">
+          <label for="h-plan">Plan of Interest</label>
+          <select id="h-plan">
+            <option value="">Select a plan…</option>
+            <option>Essential Plan</option>
+            <option>Flexi Cover</option>
+            <option>Tribute Plan</option>
+            <option>Prestige Plan</option>
+            <option>Burial Society Plan</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary hero-form-btn"
+          onclick="this.textContent='Request Sent ✓'; this.style.background='#3a6a4a'; this.disabled=true;">
+          Request Callback
+        </button>
+      </form>
+    </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      FEATURE STRIP
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <div class="strip">
   <div class="strip-item">
-    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 4 10.2C4 17.5 12 22 12 22z"/></svg>
+    <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 4 10.2C4 17.5 12 22 12 22z"/></svg>
     <div><strong>Cover from R160/month</strong><span>Affordable plans for every family</span></div>
   </div>
   <div class="strip-divider"></div>
   <div class="strip-item">
-    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
     <div><strong>Fast 2-Day Claims</strong><span>Processed swiftly when you need it</span></div>
   </div>
   <div class="strip-divider"></div>
   <div class="strip-item">
-    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
     <div><strong>Accredited Provider</strong><span>Dedicated &amp; professional staff</span></div>
   </div>
   <div class="strip-divider"></div>
   <div class="strip-item">
-    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-    <div><strong>6+ Satellite Offices</strong><span>Baberton · Matsulu · Bushbuckridge &amp; more</span></div>
+    <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    <div><strong>16,000+ Members</strong><span>Trusted across Mpumalanga</span></div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      ABOUT
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="about" id="about">
   <div class="section-inner">
     <div class="about-grid reveal">
 
       <div class="about-visual">
         <div class="about-img-frame">
-          <img src="images/Img-consultant.jpg" alt="KCR Elegance Funerals consultant"/>
+          <img src="images/img-consultant.jpg" alt="KCR Elegance Funerals consultant"/>
         </div>
+        <div class="about-accent"></div>
       </div>
 
       <div class="about-text">
@@ -140,14 +172,106 @@
           <span class="value-pill">Integrity</span>
         </div>
       </div>
+    </div>
+
+    <!-- MEMBERSHIP STATS BAR -->
+    <div class="membership-bar reveal">
+      <div class="mstat">
+        <span class="mstat-num">16,000+</span>
+        <span class="mstat-label">Active Members</span>
+      </div>
+      <div class="mstat-divider"></div>
+      <div class="mstat">
+        <span class="mstat-num">6+</span>
+        <span class="mstat-label">Branch Offices</span>
+      </div>
+      <div class="mstat-divider"></div>
+      <div class="mstat">
+        <span class="mstat-num">R160</span>
+        <span class="mstat-label">Cover From / Month</span>
+      </div>
+      <div class="mstat-divider"></div>
+      <div class="mstat">
+        <span class="mstat-num">2 Days</span>
+        <span class="mstat-label">Claims Processed</span>
+      </div>
+      <div class="mstat-divider"></div>
+      <div class="mstat">
+        <span class="mstat-num">24/7</span>
+        <span class="mstat-label">Support Available</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════ -->
+<section class="testimonials" id="testimonials">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label"><span>Testimonials</span></div>
+      <h2 class="section-title">What Our <em>Families Say</em></h2>
+      <p class="section-sub">Over 16,000 families across Mpumalanga have trusted us to honour their loved ones with dignity and care.</p>
+    </div>
+    <div class="testimonials-grid reveal">
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-body">"KCR Elegance Funerals guided us through one of the hardest times of our lives with such professionalism and warmth. The service was dignified, the fleet was immaculate, and every detail was handled perfectly."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">TM</div>
+          <div>
+            <strong>Thandi Mkhize</strong>
+            <span>Nelspruit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-body">"I enrolled my whole family on the Tribute Plan three years ago. When we needed KCR, they were there immediately. The claim was processed in under two days. I recommend them to everyone in my community."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">SN</div>
+          <div>
+            <strong>Solomon Nkosi</strong>
+            <span>Bushbuckridge</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-body">"The R160 plan gave our family the peace of mind we needed. The consultants were patient, caring and explained everything clearly. The glass hearse was absolutely stunning — my father was honoured beautifully."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">NM</div>
+          <div>
+            <strong>Nosipho Mahlangu</strong>
+            <span>Matsulu</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard">
+        <div class="tcard-stars">★★★★★</div>
+        <p class="tcard-body">"From the body repatriation to the tombstone, KCR handled everything seamlessly. Their satellite office in Baberton made it so convenient. A truly professional and compassionate team."</p>
+        <div class="tcard-author">
+          <div class="tcard-avatar">JD</div>
+          <div>
+            <strong>Jonas Dlamini</strong>
+            <span>Baberton</span>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      PLANS
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="plans" id="plans">
   <div class="section-inner">
     <div class="plans-header reveal">
@@ -155,34 +279,46 @@
         <div class="section-label"><span>Our Plans</span></div>
         <h2 class="section-title">Affordable Cover<br/><em>From R160/Month</em></h2>
       </div>
-      <p class="section-sub">Explore our thoughtfully curated plans. For personalised assistance, our dedicated consultants will guide you with care and professionalism.</p>
+      <div style="display: flex; flex-direction: column; gap: 20px; align-items: flex-start;">
+        <p class="section-sub" style="margin: 0;">Explore our thoughtfully curated plans. For personalised assistance, our dedicated consultants will guide you with care and professionalism.</p>
+        
+        <a href="KCR BROCHURE.pdf" download class="btn-outline" style="color: var(--gold); border-color: var(--gold); display: inline-flex; align-items: center; gap: 10px;">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download Brochure
+        </a>
+      </div>
     </div>
+    
     <div class="plans-grid reveal">
 
       <div class="plan-card">
         <svg class="plan-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="20"/><path d="M24 14v10l6 6"/></svg>
-        <div class="plan-name">Essential</div>
-        <div class="plan-sub">Funeral Plan</div>
-        <p class="plan-desc">Core coverage for essential funeral arrangements, ensuring a dignified farewell at an affordable entry price.</p>
+        <div class="plan-name">Family Plan</div>
+        <div class="plan-sub">15 Members • R160.00 p/m</div>
+        <p class="plan-desc">Comprehensive cover for the whole family, ensuring a dignified farewell at an affordable entry price.</p>
         <ul class="plan-features">
-          <li>Basic funeral coverage</li>
-          <li>Affordable monthly premium</li>
-          <li>2-day claims processing</li>
-          <li>Family support services</li>
+          <li>Free Repatriation (500km)</li>
+          <li>Full Burial Service</li>
+          <li>Hearse + 1 Family Car</li>
+          <li>Grocery Hamper & Refreshments</li>
         </ul>
         <a href="#contact" class="plan-link">Enquire →</a>
       </div>
 
       <div class="plan-card">
         <svg class="plan-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 24C8 14 14 8 24 8s16 6 16 16-6 16-16 16"/><path d="M24 20v4l3 3"/><path d="M8 34l8 0 0-8"/></svg>
-        <div class="plan-name">Flexi Cover</div>
-        <div class="plan-sub">Adaptable Options</div>
-        <p class="plan-desc">Flexible and adaptable coverage designed to meet changing family needs with customisable options.</p>
+        <div class="plan-name">Bronze Plan</div>
+        <div class="plan-sub">12 + 3 Extended • R220.00 p/m</div>
+        <p class="plan-desc">Expanded coverage that accommodates extended family members with a complete cemetery set up.</p>
         <ul class="plan-features">
-          <li>Adaptable coverage tiers</li>
-          <li>Extended family options</li>
-          <li>Flexible premium terms</li>
-          <li>Priority claim support</li>
+          <li>Free Repatriation (500km)</li>
+          <li>Full Burial Service</li>
+          <li>Hearse + 1 Family Car</li>
+          <li>Grocery Hamper & Refreshments</li>
         </ul>
         <a href="#contact" class="plan-link">Enquire →</a>
       </div>
@@ -190,28 +326,28 @@
       <div class="plan-card featured">
         <div class="plan-badge">Popular</div>
         <svg class="plan-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 6L29 18L42 18L32 27L36 40L24 32L12 40L16 27L6 18L19 18Z"/></svg>
-        <div class="plan-name">Tribute Plan</div>
-        <div class="plan-sub">Personalised Memorials</div>
-        <p class="plan-desc">A carefully personalised plan to create a meaningful memorial that truly honours your loved one's life and legacy.</p>
+        <div class="plan-name">Platinum Plan</div>
+        <div class="plan-sub">9 Members • R270.00 p/m</div>
+        <p class="plan-desc">A premium personalized plan with enhanced fleet services and floral arrangements for a distinguished tribute.</p>
         <ul class="plan-features">
-          <li>Personalised memorial service</li>
-          <li>Floral &amp; décor arrangements</li>
-          <li>Executive funeral fleet</li>
-          <li>Dedicated consultant</li>
+          <li>Free Repatriation (500km)</li>
+          <li>Hearse + 2 Family Cars</li>
+          <li>Grave Marker & Coffin Spread</li>
+          <li>2 Round Poseys & Grocery Hamper</li>
         </ul>
         <a href="#contact" class="plan-link">Enquire →</a>
       </div>
 
       <div class="plan-card">
         <svg class="plan-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 4C24 4 34 12 40 22C46 32 40 44 24 44C8 44 2 32 8 22C14 12 24 4 24 4Z"/></svg>
-        <div class="plan-name">Prestige Plan</div>
-        <div class="plan-sub">Most Distinguished Package</div>
-        <p class="plan-desc">Our most distinguished offering — the pinnacle of our services, meticulously crafted for the finest farewell.</p>
+        <div class="plan-name">Gold Plan</div>
+        <div class="plan-sub">10 Members • R420.00 p/m</div>
+        <p class="plan-desc">Our highly distinguished offering featuring upgraded transport, premium deco, and exclusive cashback benefits.</p>
         <ul class="plan-features">
-          <li>Premium full coverage</li>
-          <li>VIP executive fleet</li>
-          <li>Tents &amp; catering support</li>
-          <li>Burial society provisions</li>
+          <li>Free Repatriation (500km)</li>
+          <li>Hearse + 3 Family Cars</li>
+          <li>Gold Cemetery & Church Set Up</li>
+          <li>R1500 Cashback & Grocery Hamper</li>
         </ul>
         <a href="#contact" class="plan-link">Enquire →</a>
       </div>
@@ -220,9 +356,9 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      SERVICES
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="services" id="services">
   <div class="section-inner">
     <div class="reveal">
@@ -231,89 +367,176 @@
       <p class="section-sub">We go beyond the ordinary — ensuring every detail of your funeral plan and service is meticulously crafted to perfection.</p>
     </div>
     <div class="services-grid reveal">
+      
       <div class="service-item">
         <div class="service-num">01</div>
-        <div class="service-title">Affordable Funeral Services</div>
-        <p class="service-desc">Dignified funeral services tailored to your budget, ensuring a fitting farewell without financial strain on your family.</p>
+        <div class="service-title">Burial Services</div>
+        <p class="service-desc">Dignified and complete burial arrangements tailored to your family's needs, ensuring a respectful farewell.</p>
       </div>
+      
       <div class="service-item">
         <div class="service-num">02</div>
-        <div class="service-title">Mortuary Facilities</div>
-        <p class="service-desc">Professional and caring mortuary facilities managed with the highest standards of dignity and respect for your loved one.</p>
+        <div class="service-title">Funeral Cover</div>
+        <p class="service-desc">Comprehensive and affordable funeral policies providing financial security and peace of mind for you and your loved ones.</p>
       </div>
+      
       <div class="service-item">
         <div class="service-num">03</div>
         <div class="service-title">Body Repatriation</div>
         <p class="service-desc">Safe and dignified repatriation of loved ones across borders and provinces, handled with the utmost care and professionalism.</p>
       </div>
+      
       <div class="service-item">
         <div class="service-num">04</div>
-        <div class="service-title">Coffins &amp; Caskets</div>
-        <p class="service-desc">A curated selection of coffins and caskets across all price ranges, crafted with quality and elegance for a dignified farewell.</p>
-      </div>
-      <div class="service-item">
-        <div class="service-num">05</div>
-        <div class="service-title">Cremation Services</div>
+        <div class="service-title">Cremation</div>
         <p class="service-desc">Respectful and affordable cremation services handled by trained professionals with compassion and the highest standards of care.</p>
       </div>
+      
+      <div class="service-item">
+        <div class="service-num">05</div>
+        <div class="service-title">Tombstones</div>
+        <p class="service-desc">Quality tombstone solutions and memorials designed to create a lasting and beautiful tribute to your loved one's life.</p>
+      </div>
+      
       <div class="service-item">
         <div class="service-num">06</div>
-        <div class="service-title">Tombstones &amp; Grief Support</div>
-        <p class="service-desc">Quality tombstone solutions and ongoing grief support to help families navigate every stage of their bereavement journey.</p>
+        <div class="service-title">Catering & Decor</div>
+        <p class="service-desc">Complete catering and customized home or church decor services to support your family and guests during the memorial.</p>
       </div>
+      
+      <div class="service-item">
+        <div class="service-num">07</div>
+        <div class="service-title">Caskets/Coffins</div>
+        <p class="service-desc">A curated selection of coffins and caskets across all price ranges, crafted with quality and elegance for a dignified farewell.</p>
+      </div>
+      
+      <div class="service-item">
+        <div class="service-num">08</div>
+        <div class="service-title">Funeral Fleet Hire</div>
+        <p class="service-desc">Premium executive vehicles and specialized processional trailers available to ensure a dignified and elegant transport experience.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     FLEET
-═══════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     FLEET GALLERY
+════════════════════════════════════════ -->
 <section class="fleet" id="fleet">
   <div class="section-inner">
     <div class="fleet-header reveal">
       <div>
-        <div class="section-label"><span>Our Fleet</span></div>
+        <div class="section-label"><span>Our Fleet &amp; Products</span></div>
         <h2 class="section-title">Driven by <em>Care</em></h2>
       </div>
-      <p class="section-sub">Our executive Mercedes-Benz fleet and bespoke gold-lit glass hearse are maintained to the highest safety standards — immaculate and fitting for every service.</p>
+      <p class="section-sub">From our executive fleet to our handcrafted coffins and lasting tombstones — every detail speaks of dignity.</p>
     </div>
 
-    <div class="fleet-grid reveal">
+    <!-- Tab Buttons -->
+    <div class="fleet-tabs reveal">
+      <button class="fleet-tab active" data-tab="fleet">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        Fleet
+      </button>
+      <button class="fleet-tab" data-tab="tombstones">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+        Tombstones
+      </button>
+      <button class="fleet-tab" data-tab="coffins">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 3h8l3 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8l3-5z"/><line x1="12" y1="9" x2="12" y2="15"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+        Coffins &amp; Caskets
+      </button>
+    </div>
 
-      <div class="fleet-main">
-        <img src="images/Img-fleet6.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>        
-
-      <div class="fleet-main">
-        <img src="images/Img-fleet5.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
+    <!-- Fleet Tab -->
+    <div class="fleet-tab-content active" id="tab-fleet">
+      <div class="fleet-gallery-grid reveal">
+        <div class="fgallery-item">
+          <img src="images/Img-fleet6.jpg" alt="KCR Mercedes-Benz executive fleet"/>
+          <div class="fgallery-caption">Executive Mercedes-Benz Fleet</div>
+        </div>
+        <div class="fgallery-item">
+          <img src="images/Img-fleet8.jpg" alt="KCR fleet rear branding"/>
+          <div class="fgallery-caption">Branded Fleet — Rear View</div>
+        </div>
+        <div class="fgallery-item">
+          <img src="images/img-hearse.jpg" alt="KCR gold-lit glass hearse trailer"/>
+          <div class="fgallery-caption">Premium Gold-Lit Glass Hearse</div>
+        </div>
+        <div class="fgallery-item">
+          <img src="images/Img-fleet4.jpg" alt="KCR fleet at service"/>
+          <div class="fgallery-caption">Fleet Ready for Service</div>
+        </div>
       </div>
-
-      <div class="fleet-main">
-        <img src="images/Img-fleet8.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>      
-
-      <div class="fleet-main">
-        <img src="images/Img-fleet2.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>  
-      
-      <div class="fleet-main">
-        <img src="images/Img-fleet7.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>        
-
-      <div class="fleet-main">
-        <img src="images/Img-fleet4.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>   
-      
-      <div class="fleet-main">
-        <img src="images/Img-fleet3.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>   
-      
-      <div class="fleet-main">
-        <img src="images/Img-logo2.jpg" alt="KCR executive Mercedes-Benz fleet, front view"/>
-      </div>         
-
     </div>
 
+    <!-- Tombstones Tab -->
+    <div class="fleet-tab-content" id="tab-tombstones">
+      <div class="fleet-gallery-grid reveal">
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+            <span>Tombstone Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+            <span>Tombstone Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+            <span>Tombstone Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+            <span>Tombstone Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coffins & Caskets Tab -->
+    <div class="fleet-tab-content" id="tab-coffins">
+      <div class="fleet-gallery-grid reveal">
+        <div class="fgallery-item">
+          <img src="images/img-casket.jpeg" alt="Premium funeral casket with floral arrangement"/>
+          <div class="fgallery-caption">Premium Casket with Floral Arrangement</div>
+        </div>
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M8 3h8l3 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8l3-5z"/></svg>
+            <span>Coffin Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M8 3h8l3 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8l3-5z"/></svg>
+            <span>Coffin Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+        <div class="fgallery-item fgallery-placeholder">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24"><path d="M8 3h8l3 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8l3-5z"/></svg>
+            <span>Coffin Gallery</span>
+            <p>Images coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fleet Stats -->
     <div class="fleet-stats reveal">
       <div class="fstat">
         <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
@@ -339,9 +562,9 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      WHY KCR
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="why" id="why">
   <div class="section-inner">
     <div class="reveal">
@@ -379,20 +602,20 @@
         <p>Our dedicated team is available to answer your questions and guide you through selecting the right plan for your family.</p>
         <div class="contact-card">
           <div class="contact-row">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>061 545 7061 (Call or WhatsApp)</span>
           </div>
           <div class="contact-row">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span>info@kcrelegancefunerals.co.za</span>
           </div>
           <div class="contact-row">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>105 Orion Building, Bester Street, Nelspruit</span>
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>U1 Nelcity Bld, Cnr Samora Michel Dr &amp; Paul Kruger Rd</span>
           </div>
           <div class="contact-row">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-            <span>Satellite: Baberton · Matsulu · Luphisi · Mbuzini · Bushbuckridge · Graskop</span>
+            <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            <span>Baberton · Matsulu · Luphisi · Mbuzini · Bushbuckridge · Graskop</span>
           </div>
         </div>
         <a href="#contact" class="btn-primary" style="align-self:flex-start; margin-top:8px;">Get In Touch</a>
@@ -402,9 +625,9 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      FAQ
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="faq" id="faq">
   <div class="section-inner">
     <div class="faq-grid reveal">
@@ -437,16 +660,62 @@
         </div>
         <div class="faq-item">
           <div class="faq-q">Where are your offices located?</div>
-          <div class="faq-a"><p>Our main office is at 105 Orion Building, Bester Street, Nelspruit, 1200. We also have satellite offices in Baberton, Matsulu, Luphisi, Mbuzini, Bushbuckridge and Graskop to serve communities across the region.</p></div>
+          <div class="faq-a"><p>Our main office is at U1 Nelcity Bld, Cnr Samora Michel Dr &amp; Paul Kruger Rd, Nelspruit. We also have satellite offices in Baberton, Matsulu, Luphisi, Mbuzini, Bushbuckridge and Graskop.</p></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
+     GOOGLE MAPS
+════════════════════════════════════════ -->
+<section class="map-section" id="location">
+  <div class="section-inner">
+    <div class="map-header reveal">
+      <div>
+        <div class="section-label"><span>Find Us</span></div>
+        <h2 class="section-title">Visit Our <em>Office</em></h2>
+      </div>
+      <div class="map-address-card">
+        <div class="map-addr-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <strong>Main Office</strong>
+            <span>U1 Nelcity Bld, Cnr Samora Michel Dr &amp; Paul Kruger Rd, Nelspruit</span>
+          </div>
+        </div>
+        <div class="map-addr-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <strong>Working Hours</strong>
+            <span>Monday – Saturday · 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+        <div class="map-addr-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <strong>Phone</strong>
+            <span>061 545 7061</span>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=Nelcity+Building+Nelspruit" target="_blank" class="btn-primary" style="margin-top:8px;">Get Directions</a>
+      </div>
+    </div>
+
+    <!-- Map embed placeholder — replace src with your actual Google Maps embed URL -->
+    <div class="map-embed reveal">
+      <div class="map-embed-placeholder">
+        <svg width="56" height="56" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3>Google Maps</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
      CONTACT
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <section class="contact" id="contact">
   <div class="section-inner">
     <div class="contact-grid">
@@ -458,7 +727,7 @@
         <div class="contact-info">
           <div class="cinfo-item">
             <div class="cinfo-icon">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div class="cinfo-body">
               <span class="cinfo-label">Phone &amp; WhatsApp</span>
@@ -467,25 +736,25 @@
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
             <div class="cinfo-body">
               <span class="cinfo-label">Email</span>
-              <span class="cinfo-val">info@kcrelegancefunerals.co.za<br/>admin@kcrelegancefunerals.co.za<br/>sales@kcrelegancefunerals.co.za</span>
+              <span class="cinfo-val">info@kcrelegancefunerals.co.za</span>
             </div>
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div class="cinfo-body">
               <span class="cinfo-label">Main Office</span>
-              <span class="cinfo-val">105 Orion Building<br/>Bester Street, Nelspruit, 1200</span>
+              <span class="cinfo-val">U1 Nelcity Bld<br/>Cnr Samora Michel Dr &amp; Paul Kruger Rd<br/>Nelspruit</span>
             </div>
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
             </div>
             <div class="cinfo-body">
               <span class="cinfo-label">Satellite Offices</span>
@@ -494,7 +763,7 @@
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div class="cinfo-body">
               <span class="cinfo-label">Working Hours</span>
@@ -520,8 +789,8 @@
           <input type="email" id="email" placeholder="your@email.com"/>
         </div>
         <div class="form-group">
-          <label for="plan">Plan of Interest</label>
-          <select id="plan">
+          <label for="c-plan">Plan of Interest</label>
+          <select id="c-plan">
             <option value="">Select a plan…</option>
             <option>Essential Plan</option>
             <option>Flexi Cover</option>
@@ -536,16 +805,19 @@
           <label for="msg">Message</label>
           <textarea id="msg" placeholder="How can we assist you?"></textarea>
         </div>
-        <button type="submit" class="btn-primary" onclick="this.textContent='Message Sent ✓'; this.style.background='#4a7a5a'; this.disabled=true;">Send Message</button>
+        <button type="submit" class="btn-primary"
+          onclick="this.textContent='Message Sent ✓'; this.style.background='#3a6a4a'; this.disabled=true;">
+          Send Message
+        </button>
       </form>
 
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
+<!-- ════════════════════════════════════════
      FOOTER
-═══════════════════════════════════════════ -->
+════════════════════════════════════════ -->
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
@@ -566,12 +838,12 @@
     <div class="footer-col">
       <h4>Our Services</h4>
       <ul>
-        <li><a href="#services">Funeral Services</a></li>
-        <li><a href="#services">Mortuary Facilities</a></li>
+        <li><a href="#services">Burial Services</a></li>
+        <li><a href="#services">Funeral Cover</a></li>
         <li><a href="#services">Body Repatriation</a></li>
-        <li><a href="#services">Coffins &amp; Caskets</a></li>
         <li><a href="#services">Cremation</a></li>
         <li><a href="#services">Tombstones</a></li>
+        <li><a href="#services">Funeral Fleet Hire</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -579,30 +851,33 @@
       <ul>
         <li><a href="tel:0615457061">061 545 7061</a></li>
         <li><a href="mailto:info@kcrelegancefunerals.co.za">info@kcrelegancefunerals.co.za</a></li>
-        <li><a href="#">105 Orion Building, Nelspruit</a></li>
+        <li><a href="#location">U1 Nelcity Bld, Nelspruit</a></li>
+        <li><a href="#location">Cnr Samora Michel Dr & Paul Kruger Rd</a></li>
         <li><a href="#">Mon–Sat · 9AM–6PM</a></li>
-        <li><a href="https://www.kcrelegancefunerals.co.za" target="_blank">www.kcrelegancefunerals.co.za</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 KCR Elegance Funerals. All rights reserved. &nbsp;·&nbsp; Honoring Lives with Dignity</p>
+    <p>© Thabang Magaele. All rights reserved.</p>
     <div class="footer-socials">
-      <a class="social-btn" href="https://www.facebook.com/61577684634157" target="_blank" title="Facebook">
-        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </a>
-      <a class="social-btn" href="https://www.instagram.com/reel/DTnjlmfDqsC/" target="_blank" title="Instagram">
-        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
       <a class="social-btn" href="https://wa.me/27615457061" target="_blank" title="WhatsApp">
-        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      </a>
+      <a class="social-btn" href="https://web.facebook.com/p/KCR-Elegance-Funerals-61577684634157/?_rdc=1&_rdr#" target="_blank" title="Facebook">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.instagram.com/kcr_elegance_funerals/" target="_blank" title="Instagram">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.tiktok.com/@kcrelegancefuneral" target="_blank" title="TikTok">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.26-1.17 4.54-3.08 5.8-1.74 1.15-4.04 1.34-5.96.65-2.19-.79-3.95-2.73-4.27-5.07-.36-2.61.9-5.32 3.12-6.52 1.95-1.05 4.38-1.07 6.34-.14v4.13c-1.3-.64-2.92-.61-4.05.29-1.28 1.01-1.6 2.87-.77 4.21.73 1.19 2.25 1.77 3.59 1.41 1.48-.39 2.45-1.77 2.49-3.3.06-4.52.03-9.04.03-13.56z"/></svg>
       </a>
     </div>
   </div>
 </footer>
 
 <script>
-  // FAQ accordion
+  /* ─ FAQ accordion ─ */
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
       const item = q.parentElement;
@@ -612,15 +887,25 @@
     });
   });
 
-  // Scroll reveal
-  const revealObserver = new IntersectionObserver((entries) => {
+  /* ─ Scroll reveal ─ */
+  const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.07 });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  // Navbar shadow on scroll
+  /* ─ Navbar shadow on scroll ─ */
   window.addEventListener('scroll', () => {
     document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  /* ─ Fleet gallery tabs ─ */
+  document.querySelectorAll('.fleet-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.fleet-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.fleet-tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
   });
 </script>
 </body>
