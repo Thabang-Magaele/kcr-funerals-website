@@ -668,6 +668,11 @@ h2.section-title em { font-style: italic; color: var(--gold); }
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
 }
+
+/* Coffins tab: 4-column grid, wraps across 3 rows (11 items) */
+.fleet-gallery-grid--coffins {
+  grid-template-columns: repeat(4, 1fr);
+}
 .fgallery-item {
   position: relative;
   aspect-ratio: 4/3;
